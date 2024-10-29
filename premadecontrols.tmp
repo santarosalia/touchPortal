@@ -1,0 +1,251 @@
+{
+    "name": "Premade Buttons",
+    "version": 14,
+    "list": [
+        {
+            "name": "General",
+            "icon":"cat_general_main.png",
+            "list": [
+                {
+                    "name": "Toggle Button",
+                    "name_nl": "Schakelknop",
+                    "template":{"FF":"Default","A":[{"KEY_TYPE":"LOGIC_TOGGLE_BUTTON_STATE_ACTION"},{"KEY_STATE_TRUEFALSE":true,"KEY_STATE_VALUE_TYPE":0,"KEY_STATE_COMPARISON":"=","KEY_STATE_STRING_VALUE":"On","KEY_STATE_NAME":"self","KEY_TYPE":"LOGIC_IF_ACTION"},{"comment":"Add the action you want to be executed when the button state changes to ON","KEY_TYPE":"COMMENT_ACTION"},{"KEY_TYPE":"LOGIC_ELSE_ACTION"},{"comment":"Add the action you want to be executed when the button state changes to OFF","KEY_TYPE":"COMMENT_ACTION"},{"KEY_TYPE":"LOGIC_IF_END_ACTION"}],"BD":1,"C":[],"BE":-15060071,"kSCM":25,"BG":-11704628,"E":[{"KEY_STATE_TRUEFALSE":false,"KEY_TYPE":"ON_BUTTON_STATE_CHANGE"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"KEY_START_COLOR":-1684147,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_END_COLOR":-5039590,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_TITLE":"Off","pmcType":2,"KEY_IS_CHANGE_BG_COLOR":true,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false},{"KEY_STATE_TRUEFALSE":true,"KEY_TYPE":"ON_BUTTON_STATE_CHANGE"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"KEY_START_COLOR":-11698099,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_END_COLOR":-15053542,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_TITLE":"On","pmcType":1,"KEY_IS_CHANGE_BG_COLOR":true,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false}],"kIAPBKC":-14803426,"I":"","ITS":false,"BiR":true,"kSCTY":0,"BiT":false,"kSCHS":false,"inS":"","IiS":false,"T":"Toggle Button","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u490xhr174dvs","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1,"HCV": {"pmcType":3,"KEY_IS_CHANGE_IS_FULL_ICON": false,"kiTF": false,"KEY_START_COLOR": -10059546,"kiTOV": false,"KEY_IS_CHANGE_TITLE": false,"KEY_IS_CHANGE_TEXT_COLOR": false,"KEY_END_COLOR": -10059546,"KEY_IS_CHANGE_ICON": false,"kiBD": false,"KEY_IS_CHANGE_ALIGN_HOR": false,"KEY_IS_CHANGE_IS_ROUNDED": false,"kC": false,"kiTOH": false,"KEY_TYPE": "CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR": true,"KEY_IS_CHANGE_IS_TRANSPARENT": false,"KEY_IS_CHANGE_ALIGN_VERT": false}},
+                    "messages":{
+                        "done":"Your toggle button has been created. You can now add the actions you want the button to perform when it is either off or on. Click on the button to edit the actions. You can of course also alter all other settings such as colors, texts, icons etc.",
+                        "done_nl":"Je Schakelknop is aangemaakt. Je kan klikken op de knop om de acties toe te voegen die je wilt dat gebeuren bij de aan en uit stand. Je kan uiteraard ook alles aanpassen zoals de kleuren, teksten, icons en meer."
+                    },
+                    "icon": "toggle_button.png",
+                    "requiresPro":false
+                },
+                {
+                    "name": "Are You Sure Button",
+                    "name_nl": "Weet u het zeker Knop",
+                    "messages":{
+                        "done":"Your are-you-sure button has been created. You can now add the actions you want the button to perform after you have verified you are sure to execute the action. Click on the button to edit the actions. You can of course also alter all other settings such as colors, texts, icons etc.",
+                        "done_nl":"Je weet-u-het-zeker knop is aangemaakt. Je kan klikken op de knop om de acties toe te voegen die je wilt dat gebeuren bij wanneer je hebt aangegeven dat je het zeker weet en de acties wilt uitvoeren. Je kan uiteraard ook alles aanpassen zoals de kleuren, teksten, icons en meer."
+                    },
+                    "icon": "are_you_sure.png",
+                    "template":{"FF":"Default","A":[{"KEY_STATE_TRUEFALSE":false,"KEY_STATE_VALUE_TYPE":0,"KEY_STATE_COMPARISON":"=","KEY_STATE_STRING_VALUE":"Off","KEY_STATE_NAME":"self","KEY_TYPE":"LOGIC_IF_ACTION"},{"KEY_STATE_TRUEFALSE":true,"KEY_TYPE":"LOGIC_SET_BUTTON_STATE_ACTION"},{"TT":1,"kIEn":true,"KEY_TIMER_VALUE":"3","kTS":1,"KEY_TYPE":"TIMER_ACTION"},{"KEY_STATE_TRUEFALSE":false,"KEY_TYPE":"LOGIC_SET_BUTTON_STATE_ACTION"},{"KEY_TYPE":"LOGIC_ELSE_ACTION"},{"KEY_STATE_TRUEFALSE":false,"KEY_TYPE":"LOGIC_SET_BUTTON_STATE_ACTION"},{"comment":"Add the actions here that you want to execute when the button has \nbeen press after showing the 'Are you sure?' question. Only if the button is\npressed two times within 3 seconds it will execute this part of the button.","KEY_TYPE":"COMMENT_ACTION"},{"KEY_TYPE":"LOGIC_IF_END_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"KEY_STATE_TRUEFALSE":false,"KEY_TYPE":"ON_BUTTON_STATE_CHANGE"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"kiTOV":false,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"kiTOH":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","pmcType":1,"KEY_TITLE":"Title","KEY_IS_CHANGE_BG_COLOR":false,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false},{"KEY_STATE_TRUEFALSE":true,"KEY_TYPE":"ON_BUTTON_STATE_CHANGE"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"kiTOV":false,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"kiTOH":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","pmcType":2,"KEY_TITLE":"Are you sure?","KEY_IS_CHANGE_BG_COLOR":false,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Title","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u490xhr174dvs","I_b64":"","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Show Current Time Button",
+                    "name_nl": "Toon Tijd op Knop",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"$DateTimeCustom{$rp{TIME}}","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Time","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u490xhr174dvs","I_b64":"","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1},
+                    "replacements": [
+                        {
+                            "code": "$rp{TIME}",
+                            "type": "TEXT",
+                            "value": "HH:mm:ss",
+                            "title": "Time format",
+                            "title_nl": "Tijd structuur",
+                            "description": "Set up the time format to have it show the exact format as you require. These letters can be used; a, h, k, K, H, m, S, s, A, n, N, V, x, X, z, Z. If you are unfamiliar with these, check online for date formatter information.",
+                            "external_link":"http://www.java2s.com/ref/java/java-datetimeformatter-patterns.html"
+                        }
+                    ],
+                    "icon":"show_current_time_button.png"
+                },
+                {
+                    "name": "Show Current Date Button",
+                    "name_nl": "Toon Datum op Knop",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"$DateTimeCustom{$rp{DATE}}","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Date","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u490xhr174dvs","I_b64":"","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1},
+                    "replacements": [
+                        {
+                            "code": "$rp{DATE}",
+                            "type": "TEXT",
+                            "title": "Date format",
+                            "value": "YYYY-MM-dd",
+                            "title_nl": "Datum structuur",
+                            "description": "Set up the date format to have it show the exact format as you require. These letters can be used; G, u, y, D, M, L, d, Q, q, Y, w, W, E, e, c, F. If you are unfamiliar with these, check online for date formatter information.",
+                            "external_link":"http://www.java2s.com/ref/java/java-datetimeformatter-patterns.html"
+                        }
+                    ],
+                    "icon":"show_current_date_button.png"
+                }
+            ]
+        },
+        {
+            "name": "OBS",
+            "icon":"cat_obs.png",
+            "list": [
+                {
+                    "name": "Start Stream Toggle",
+                    "name_nl": "Start Stream Knop",
+                    "icon":"obs_toggle_streaming.png",
+                    "template":{"FF":"Default","A":[{"KEY_STATE_TRUEFALSE":false,"KEY_STATE_VALUE_TYPE":1,"KEY_STATE_COMPARISON":"=","KEY_STATE_STRING_VALUE":"stopped","KEY_STATE_NAME":"STATE_ID_ON_OBS_STREAMING_STATE","KEY_TYPE":"LOGIC_IF_ACTION"},{"kV":1,"KEY_TYPE":"OBS_START_STREAMING_ACTION"},{"KEY_TYPE":"LOGIC_ELSE_ACTION"},{"kV":2,"KEY_TYPE":"OBS_START_STREAMING_ACTION"},{"KEY_TYPE":"LOGIC_IF_END_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"KEY_IS_NOT_EQUAL":false,"KEY_STATE":"started","KEY_STATE_ID":"STATE_ID_ON_OBS_STREAMING_STATE","KEY_TYPE":"ON_STATE_CHANGE"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_START_COLOR":-11704628,"kiTOV":false,"pmcType":1,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_END_COLOR":-10059546,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"kiTOH":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_TITLE":"Live!","KEY_IS_CHANGE_BG_COLOR":true,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false},{"KEY_IS_NOT_EQUAL":false,"KEY_STATE":"stopped","KEY_STATE_ID":"STATE_ID_ON_OBS_STREAMING_STATE","KEY_TYPE":"ON_STATE_CHANGE"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_START_COLOR":-5000269,"kiTOV":false,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_END_COLOR":-5000269,"KEY_IS_CHANGE_ICON":false,"pmcType":2,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"kiTOH":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_TITLE":"Go Live!","KEY_IS_CHANGE_BG_COLOR":true,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Go Live!","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u490xhr174dvs","I_b64":"","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Start Recording Toggle",
+                    "icon":"obs_toggle_recording.png",
+                    "template":{"FF":"Default","A":[{"KEY_STATE_TRUEFALSE":false,"KEY_STATE_VALUE_TYPE":1,"KEY_STATE_COMPARISON":"=","kIEn":true,"KEY_STATE_STRING_VALUE":"stopped","KEY_STATE_NAME":"STATE_ID_ON_OBS_RECORDING_STATE","KEY_TYPE":"LOGIC_IF_ACTION"},{"kV":1,"KEY_TYPE":"OBS_START_RECORDING_ACTION"},{"kIEn":true,"KEY_TYPE":"LOGIC_ELSE_ACTION"},{"kV":2,"KEY_TYPE":"OBS_START_RECORDING_ACTION"},{"kIEn":true,"KEY_TYPE":"LOGIC_IF_END_ACTION"}],"BD":1,"C":[],"BE":-11704628,"kSCM":25,"BG":-15060071,"E":[{"KEY_IS_NOT_EQUAL":false,"KEY_STATE":"started","KEY_STATE_ID":"STATE_ID_ON_OBS_RECORDING_STATE","KEY_TYPE":"ON_STATE_CHANGE"},{"kTOV":8,"KEY_START_COLOR":-15060071,"KEY_IS_ROUNDED":true,"kiTOV":true,"pmcType":1,"KEY_END_COLOR":-11704628,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"KEY_TITLE":"Stop\nRecording","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true},{"KEY_IS_NOT_EQUAL":false,"KEY_STATE":"stopped","KEY_STATE_ID":"STATE_ID_ON_OBS_RECORDING_STATE","KEY_TYPE":"ON_STATE_CHANGE"},{"kTOV":8,"KEY_START_COLOR":-10066330,"KEY_IS_ROUNDED":true,"kiTOV":true,"KEY_END_COLOR":-6710887,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"pmcType":2,"KEY_TITLE":"Start\nRecording","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":false,"kSCHS":false,"inS":"","IiS":false,"T":"Start\nRecording","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":0,"id":"u490xhr174dvs","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":8,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Scene Selection Button",
+                    "template":{"FF":"Default","A":[{"KEY_SCENE_VALUE":"$rp{OBS_SCENE}","KEY_TYPE":"OBS_SCENE_SELECTION_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"KEY_IS_NOT_EQUAL":false,"KEY_STATE":"$rp{OBS_SCENE}","KEY_STATE_ID":"STATE_ID_ON_OBS_SCENE_CHANGED","KEY_TYPE":"ON_STATE_CHANGE"},{"kTOV":8,"KEY_START_COLOR":-15060071,"KEY_IS_ROUNDED":true,"kiTOV":true,"KEY_END_COLOR":-11704628,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"pmcType":1,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"KEY_TITLE":"Scene\n$rp{OBS_SCENE}","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true},{"KEY_IS_NOT_EQUAL":true,"KEY_STATE":"$rp{OBS_SCENE}","KEY_STATE_ID":"STATE_ID_ON_OBS_SCENE_CHANGED","KEY_TYPE":"ON_STATE_CHANGE"},{"kTOV":8,"KEY_START_COLOR":-10066330,"KEY_IS_ROUNDED":true,"kiTOV":true,"pmcType":2,"KEY_END_COLOR":-6710887,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"KEY_TITLE":"Scene\n$rp{OBS_SCENE}","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Show Scene\n$rp{OBS_SCENE}","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u490xhr174dvs","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1},
+                    "replacements": [
+                        {
+                            "code": "$rp{OBS_SCENE}",
+                            "type": "OBS_SCENE",
+                            "title": "Scene",
+                            "title_nl": "Scene",
+                            "description": "To create this premade button we need some information on what you want to show. Select the scene you want to toggle with this button.",
+                            "description_nl": "Om deze knop te maken hebben we informatie nodig van wat je wilt tonen. Selecteer de scene welke je aan en uit wil zetten met deze knop."
+                        }
+                    ]
+                },
+                {
+                    "name": "Source Visibility Toggle",
+                    "template":{"FF":"Default","A":[{"KEY_SCENE_VALUE":"$rp{OBS_SCENE}","KEY_SOURCE_VALUE":"$rp{OBS_SCENE_SOURCE}","kV":3,"KEY_TYPE":"OBS_SOURCE_SELECTION_ACTION"}],"BD":1,"C":[],"BE":-11704628,"kSCM":25,"BG":-15060071,"E":[{"KEY_VISIBILITY":false,"KEY_TYPE":"ON_OBS_SOURCE_VISIBILITY","KEY_SOURCE_NAME":"$rp{OBS_SCENE_SOURCE}"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","pmcType":2,"KEY_TITLE":"$rp{OBS_SCENE_SOURCE} is hidden","KEY_IS_CHANGE_BG_COLOR":false,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false},{"KEY_VISIBILITY":true,"KEY_TYPE":"ON_OBS_SOURCE_VISIBILITY","KEY_SOURCE_NAME":"$rp{OBS_SCENE_SOURCE}"},{"KEY_IS_CHANGE_IS_FULL_ICON":false,"KEY_IS_CHANGE_TITLE":true,"KEY_IS_CHANGE_TEXT_COLOR":false,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"KEY_IS_CHANGE_ALIGN_HOR":false,"KEY_IS_CHANGE_IS_ROUNDED":false,"kC":false,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","pmcType":1,"KEY_TITLE":"$rp{OBS_SCENE_SOURCE} is visible","KEY_IS_CHANGE_BG_COLOR":false,"KEY_IS_CHANGE_IS_TRANSPARENT":false,"KEY_IS_CHANGE_ALIGN_VERT":false}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":false,"kSCHS":false,"inS":"","IiS":false,"T":"Source Toggle","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u445dok441mes","I_b64":"","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1},
+                    "replacements": [
+                        {
+                            "code": "$rp{OBS_SCENE}",
+                            "type": "OBS_SCENE",
+                            "title": "Scene",
+                            "title_nl": "Scene",
+                            "description": "To create this premade button we need some information on what you want to show. Start by selecting the scene that holds the source you want to toggle.",
+                            "description_nl": "Om deze knop te maken hebben we informatie nodig van wat je wilt tonen. Selecteer de scene waarin de source zich bevindt."
+                        },
+                        {
+                            "code": "$rp{OBS_SCENE_SOURCE}",
+                            "type": "OBS_SCENE_SOURCE",
+                            "title": "Source",
+                            "description": "Select the source that you want to toggle with this button"
+                        }
+                    ],
+                    "requiresPro":false
+                },
+                {
+                    "name": "Frames per Second on a Button",
+                    "icon":"obs_show_fps_button.png",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"FPS: $obs_fps","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"FPS: 0","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u445dok441mes","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Streaming time on a Button",
+                    "icon":"obs_show_stream_time_button.png",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"Streaming\n$obs_stream_time_full","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Streaming\n0","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u445dok441mes","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Toggle Studio Mode",
+                    "icon":"obs_toggle_studio_mode_button.png",
+                    "template":{"FF":"Default","A":[{"kL":[{"val":"On","vari":"STATE_OBS_IS_STUDIO_MODE","cmp":0,"lc":0,"varc":"--error--","varp":"OBS Studio mode"}],"kIEn":true,"KEY_TYPE":"EXTENDED_IF_STATEMENT"},{"kV":2,"KEY_TYPE":"OBS_ENABLE_STUDIO_MODE_ACTION"},{"kIEn":true,"KEY_TYPE":"LOGIC_ELSE_ACTION"},{"kV":1,"KEY_TYPE":"OBS_ENABLE_STUDIO_MODE_ACTION"},{"kIEn":true,"KEY_TYPE":"LOGIC_IF_END_ACTION"}],"BD":1,"C":[],"BE":-11704628,"kSCM":25,"BG":-15060071,"E":[{"kO":2,"kIEn":true,"KEY_TYPE":"OBS_STUDIO_MODE_CHANGE_EVENT"},{"kTOV":8,"KEY_START_COLOR":-10066330,"KEY_IS_ROUNDED":true,"kiTOV":true,"pmcType":2,"KEY_END_COLOR":-6710887,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"KEY_TITLE":"Studio mode\nOFF","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true},{"kO":1,"kIEn":true,"KEY_TYPE":"OBS_STUDIO_MODE_CHANGE_EVENT"},{"kTOV":8,"KEY_START_COLOR":-15060071,"KEY_IS_ROUNDED":true,"kiTOV":true,"pmcType": 1,"KEY_END_COLOR":-11704628,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"KEY_TITLE":"Studio mode\nON","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true}],"kIAPBKC":-14803426,"I":"","ITS":false,"BiR":true,"kSCTY":0,"BiT":false,"kSCHS":false,"inS":"","IiS":false,"T":"Studio Mode\nOn / Off","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":0,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":8,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                }
+            ]
+        },
+        {
+            "name": "Twitch",
+            "icon":"cat_twitch.png",
+            "list": [
+                {
+                    "name": "Viewer Count",
+                    "icon":"twitch_viewers.png",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"Viewers: $twitch_view_count","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Viewers: 0","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Follower Count",
+                    "icon":"twitch_followers.png",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"Followers: $twitch_follow_count","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Followers: 0","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Subscriber Count",
+                    "icon":"twitch_subscribers.png",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"Subscribers: $twitch_subscriber_count","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Subscribers: 0","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Chatter Count",
+                    "icon":"twitch_chatters.png",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"Chatters: $twitch_chatter_count","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Chatters: 0","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Viewer, Follower & Subscriber Count",
+                    "template":{"FF":"Default","A":[],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"kTxt":"Viewers: $twitch_view_count\nFollowers: $twitch_follow_count\nSubscribers: $twitch_subscriber_count","KEY_TYPE":"AUTO_UPDATE_EVENT"}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Viewers: 0\nFollowers: 0\nSubscribers: 0","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Do Announcement",
+                    "icon": "twitch_announcement.png",
+                    "template":{"FF":"Default","A":[{"k1":"$rp{INT_STRING_LIST_types}","kIEn":true,"k2":"$rp{ANNOUNCEMENT}","KEY_TYPE":"KEY_TWITCH_ANNOUNCEMENT"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Twitch Announcement","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1},
+                    "replacements": [
+                        {
+                            "code": "$rp{INT_STRING_LIST_types}",
+                            "type": "INT_STRING_LIST",
+                            "data": "Primary|Blue|Green|Orange|Purple",
+                            "title": "Announcement Type",
+                            "title_nl": "Aankondigingstype",
+                            "description": "To create this premade button we need some information on what you want to do. Start by selecting the type of announcement you want to make",
+                            "description_nl": "Om deze knop te maken hebben we informatie nodig van wat je wilt doen. Selecteer het type aankondiging die je wilt doen."
+                        },
+                        {
+                            "code": "$rp{ANNOUNCEMENT}",
+                            "type": "TEXT",
+                            "value": "",
+                            "title": "Announcement",
+                            "title_nl": "Aankondiging",
+                            "description": "And lastly, what do you want to announce?",
+                            "description_nl":"En als laatste wat je wilt aankondigen?"
+                        }
+                    ]
+                },
+                {
+                    "name": "Play Advertisement",
+                    "icon": "twitch_advertisement.png",
+                    "template":{"FF":"Default","A":[{"KEY_STATE_TRUEFALSE":false,"KEY_STATE_VALUE_TYPE":0,"KEY_STATE_COMPARISON":"=","kIEn":true,"KEY_STATE_STRING_VALUE":"Off","KEY_STATE_NAME":"self","KEY_TYPE":"LOGIC_IF_ACTION"},{"KEY_STATE_TRUEFALSE":true,"kIEn":true,"KEY_TYPE":"LOGIC_SET_BUTTON_STATE_ACTION"},{"KEY_TYPE":"KEY_TWITCH_START_ADVERTISEMENT","KEY_AD_TIME":30},{"TT":1,"KEY_TIMER_VALUE":"30","kIEn":true,"kTS":1,"KEY_TYPE":"TIMER_ACTION"},{"KEY_STATE_TRUEFALSE":false,"kIEn":true,"KEY_TYPE":"LOGIC_SET_BUTTON_STATE_ACTION"},{"kIEn":true,"KEY_TYPE":"LOGIC_IF_END_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[{"KEY_STATE_TRUEFALSE":true,"KEY_TYPE":"ON_BUTTON_STATE_CHANGE"},{"kTOV":8,"KEY_START_COLOR":-10066330,"KEY_IS_ROUNDED":true,"kiTOV":true,"pmcType": 2,"KEY_END_COLOR":-6710887,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"KEY_TITLE":"Running ad...","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true},{"KEY_STATE_TRUEFALSE":false,"KEY_TYPE":"ON_BUTTON_STATE_CHANGE"},{"kTOV":8,"KEY_START_COLOR":-15060071,"KEY_IS_ROUNDED":true,"kiTOV":true,"pmcType": 1,"KEY_END_COLOR":-11704628,"KEY_IS_CHANGE_ICON":false,"kiBD":false,"kTOH":0,"KEY_IS_CHANGE_IS_ROUNDED":true,"KEY_ALIGN_HOR":5,"kiTOH":true,"KEY_TITLE":"Start Twitch Ad","KEY_IS_CHANGE_IS_TRANSPARENT":true,"KEY_IS_CHANGE_ALIGN_VERT":true,"KEY_IS_CHANGE_IS_FULL_ICON":false,"kiTF":false,"KEY_IS_TRANSPARENT":false,"KEY_ALIGN_VERT":2,"KEY_TEXT_COLOR":-1,"KEY_IS_CHANGE_TITLE":true,"kTS":-1,"KEY_IS_CHANGE_TEXT_COLOR":true,"KEY_IS_CHANGE_ALIGN_HOR":true,"kIEn":true,"kC":true,"KEY_TYPE":"CHANGE_BUTTON_VISUALS_ACTION","KEY_IS_CHANGE_BG_COLOR":true}],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Start Twitch Ad","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Set Stream Marker",
+                    "template":{"FF":"Default","A":[{"KEY_DEFAULT_DESCRIPTION":"$rp{STREAM_MARKER}","KEY_TYPE":"KEY_TWITCH_SET_MARKER"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"Set Stream marker","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u128akf441dtx","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1},
+                    "replacements": [
+                        {
+                            "code": "$rp{STREAM_MARKER}",
+                            "type": "TEXT",
+                            "value": "",
+                            "title": "Stream Marker Name",
+                            "title_nl": "Naam van Stream markering",
+                            "description": "To create this premade button we need some information on what you want to do. Start by selecting the type of announcement you want to make",
+                            "description_nl":"Om deze knop te maken hebben we informatie nodig van wat je wilt doen. Geef de naam van de marker."
+                        }
+                    ],
+                    "icon":"twitch_set_stream_marker.png"
+                }
+            ]
+        },
+        {
+            "name": "Google",
+            "icon":"cat_google.png",
+            "list": [
+                {
+                    "name": "Create new Document",
+                    "icon": "google_new_document.png",
+                    "template":{"FF":"Default","A":[{"kIEn":true,"KEY_URL":"docs.new","KEY_TYPE":"OPEN_URL_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"New Google Document","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u748chw934rod","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Create new Sheet",
+                    "icon": "google_new_sheet.png",
+                    "template":{"FF":"Default","A":[{"kIEn":true,"KEY_URL":"sheet.new","KEY_TYPE":"OPEN_URL_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"New Google Sheet","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u748chw934rod","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Create new Calendar Event",
+                    "icon": "google_new_cal.png",
+                    "template":{"FF":"Default","A":[{"kIEn":true,"KEY_URL":"cal.new","KEY_TYPE":"OPEN_URL_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"New Google Calendar Event","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u748chw934rod","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Create new Slide Deck",
+                    "icon": "google_new_slide.png",
+                    "template":{"FF":"Default","A":[{"kIEn":true,"KEY_URL":"slide.new","KEY_TYPE":"OPEN_URL_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"New Google Slide Deck","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u748chw934rod","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Create new Form",
+                    "icon": "google_new_form.png",
+                    "template":{"FF":"Default","A":[{"kIEn":true,"KEY_URL":"form.new","KEY_TYPE":"OPEN_URL_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"New Google Form","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u748chw934rod","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Create new Site",
+                    "icon": "google_new_site.png",
+                    "template":{"FF":"Default","A":[{"kIEn":true,"KEY_URL":"site.new","KEY_TYPE":"OPEN_URL_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"New Google Site","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u748chw934rod","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                },
+                {
+                    "name": "Create new Keep Note",
+                    "icon": "google_new_keep.png",
+                    "template":{"FF":"Default","A":[{"kIEn":true,"KEY_URL":"note.new","KEY_TYPE":"OPEN_URL_ACTION"}],"BD":1,"C":[],"BE":-13684944,"kSCM":25,"BG":-13684944,"E":[],"kIAPBKC":-14803426,"I":"","ITS":true,"BiR":true,"kSCTY":0,"BiT":true,"kSCHS":false,"inS":"","IiS":false,"T":"New Google Keep Note","kSCAC":-14145496,"kSCC":-4611631,"kSCHRC":false,"THO":4,"id":"u748chw934rod","GUdata":"","kSCIUFATS":false,"kCT":1,"kSIP":0,"TELS":5,"kSCI":"","kIAs":[],"GUid":-1,"kSCIIVA":true,"COLS":1,"TA":5,"TC":-1,"kSVP":0,"kSTP":0,"kSVAC":-10575407,"TO":4,"TP":2,"inB":false,"EXP":[],"kSD":0,"kSCTM":0,"TS":-1,"inC":0,"ROWS":1}
+                }
+            ]
+        }
+    ]
+}
